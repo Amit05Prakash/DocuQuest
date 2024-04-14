@@ -10,8 +10,7 @@ document.getElementById('chatForm').addEventListener('submit', function(event) {
         return;
     }
 
-    // This is where you would call the actual API.
-    // For now, let's just simulate a response.
+    // Simulating an API call with a delay
     setTimeout(() => {
         const simulatedResponse = `Information for ${docName}: [Simulated response]`;
         displayMessage(simulatedResponse, 'assistant');
@@ -26,3 +25,13 @@ function displayMessage(message, author) {
     chatBox.appendChild(messageDiv);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+document.querySelectorAll('input, button').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.border = '1px solid #4CAF50';
+    });
+    item.addEventListener('mouseout', () => {
+        item.style.border = '';
+    });
+});
+
