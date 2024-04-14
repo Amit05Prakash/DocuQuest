@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-interface">
-        <header>
+    <div class="chat-interface" style="height: 100vh;">
+        <div class="doc-input-container">
             <input type="text" id="docName" placeholder="Enter documentation name..." autofocus>
-        </header>
+        </div>
         <div id="chatBox" class="chat-box"></div>
         <form id="chatForm" class="input-form">
             <input type="text" id="userInput" placeholder="Ask your question..." autofocus>
-            <button type="submit">Send</button>
+            <button type="submit" class="send-btn" aria-label="Send your message">Send</button>
         </form>
     </div>
     <script src="app.js"></script>
