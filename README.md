@@ -1,2 +1,2 @@
 # DocuQuest
-Creating a Documentation Assistance tool that leverages web crawling, RAG architecture and a LLM Model.
+Creating a Documentation Assistance tool that leverages web crawling and a LLM Model.
